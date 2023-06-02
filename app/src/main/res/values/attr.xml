@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomButton">
+        <attr name="button_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomPhoneEditText">
+        <attr name="hintText" format="string"/>
+        <attr name="passwordEdittext" format="boolean"/>
+        <attr name="passwordErrorText" format="string"/>
+    </declare-styleable>
+</resources>

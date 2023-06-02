@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clCustomPhoneNumber"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlCustomPhoneNumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:background="@drawable/phone_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:hint="@string/phone_number"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="@color/gray_50">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCustomPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_100"
+            android:inputType="phone"
+            android:fontFamily="@font/roboto_400"
+            android:background="@android:color/transparent"
+            android:textSize="16sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/llError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp">
+
+        <ImageView
+            android:id="@+id/imgError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_error"/>
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_400"
+            android:textColor="@color/error_red"
+            android:layout_marginStart="8dp"
+            android:text="@string/phone_no_error"/>
+
+    </LinearLayout>
+
+</LinearLayout>

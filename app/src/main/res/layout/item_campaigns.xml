@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.fups.examplecaseandroid.ui.campaigns.model.CampaignModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/helvetica_700"
+                android:textColor="@color/gray_100"
+                android:text="@{item.title}"
+                tools:text="Netflix Kampanyası"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray_50"
+                android:fontFamily="@font/helvetica_400"
+                android:layout_marginTop="4dp"
+                android:text="@{item.description}"
+                tools:text="30 Haziran 2021 tarihine kadar"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_20"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</layout>

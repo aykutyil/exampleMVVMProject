@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ExampleCaseAndroid</string>
+
+    <!-- Main Activity -->
+    <string name="login">Giriş</string>
+    <string name="main_description">GSM numaranı ve şifreni girerek FUPS hesabına giriş yapabilirsin.</string>
+    <string name="country_code">Ülke Kodu</string>
+    <string name="phone_number">GSM Numaran</string>
+    <string name="your_password">Şifren</string>
+    <string name="forgot_my_password">Şifremi Unuttum</string>
+    <string name="campaigns">KAMPANYALAR</string>
+    <string name="all_campaigns">Tüm Kampanyalar</string>
+    <string name="password_error">En az 5 hane olmalıdır.</string>
+    <string name="phone_no_error">10 hane giriniz</string>
+
+</resources>
